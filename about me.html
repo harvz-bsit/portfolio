@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title> Portfolio </title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	</head>
+	<body>
+        <div class="sidemenu">
+            <div class="nav-links">
+                <nav>
+                    <ul>
+                        <a href="index.html" ><li>Profile</li></a>
+                        <a href="about me.html" class="active"><li>About Me</li></a>
+                        <a href="system.html"><li>Web Systems</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="upperhalf">
+                <div class="left">
+                    <div class="pic-container">
+                        <img src="picp.jpg" alt="2x2">
+                        
+                        <img src="sepak.jpg" alt="sepak" class="img2">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="text">
+                        <h3>__"TEHCNOLOGY IS BEST WHEN IT BRINGS PEOPLE TOGETHER"</h3>
+                        <br>
+                        <p>I am Harvy Raphael Virocel, 21 years old, from Tamurong 1st, Candon City, Ilocos Sur. I am a student of the University of Ilocos Philippines, 
+                            taking up Bachelor of Science in Information Technology.
+                        I have enough knowledge in dealing with Web Systems.
+                        </p>
+                        <br>
+                        <p>I have developed few <a href="system.html" style="color: black;"><u>web systems</u></a> and a Phyton-based QR Code Scanner 
+                            Attendance System way back mid-pandemic. I give you assurance that my skills in creating a web-based system is enough for you to hire me.
+                        </p>
+                    </div>
+                    <div class="text2">
+                        <h3>__"HEALTH BEFORE TECH"</h3>
+                        <br>
+                        <p>Our health is more valuable than wealth. Aside from being in front of the computer all-day long, I also spend time to have fun and making myself physically fit. 
+                            Since elementary, I am always involved in physical activities in my school.
+                        </p>
+                        <br>
+                        <p>
+                            I am one of the Student-Athletes who represented the school in last year's SCUAA Meet. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lowerhalf" style="display: block;">
+                <canvas id="myChart"></canvas>
+
+                <script>
+                var xValues = ["HTML", "CSS", "JAVASCRIPT", "MYSQL", "PHP"];
+                var yValues = [75, 67, 50, 63, 78];
+                var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145"
+                ];
+
+                new Chart("myChart", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                    display: true,
+                    text: "My Skills"
+                    }
+                }
+                });
+                </script>
+            </div>
+        </div>
+	</body>
+</html>     
